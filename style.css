@@ -1,0 +1,158 @@
+i{
+    color:blue;
+    font-size: 28px;
+    margin: auto;
+    padding: 3px;
+    position: sticky;
+}
+
+.noticias{
+   padding: 10px;
+}
+.datos{
+    padding: 25px;
+    display: inline-block;
+    left: 25px;
+    border-radius: 25px;
+
+}
+.boton{
+    background-color: rgb(196, 165, 29);
+}
+.zoom{
+    transition: 0.5s;
+}
+.zoom:hover{
+    border: 2px solid blue;
+    box-shadow: 5px 5px 20px rgba(0,0,0.2);
+    transform: translateY(-3%);
+}
+.noticia{
+    transition: 0.5s;
+}
+.noticia:hover{
+
+    background-color:rgb(255,255,0);
+    color: rgb(98, 5, 248);
+
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    height: calc(100vh - 500px);
+}
+.hero h1 {
+	font-size: 80px;
+}
+
+.hero p {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #113CFC;
+}
+nav {
+    background-color:#f2f2f2;
+    height: 80px;
+    box-shadow: rgba(149, 157,165,0.2) 0px 8px 24px;
+    display:flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+nav a{
+    flex: 1;
+    height: 100%;
+    text-transform:uppercase;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition:  .2s ease-in-out all;
+    font-weight: 500;
+}
+nav a:hover{
+    background: #f0f0f0;
+}
+nav .indicador{
+    width:  0px;
+    height: 7px;
+    background: #113CFC;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-out all;
+   /* transform: translate(-500px); */
+}.seccion {
+	min-height: 100vh;
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+
+	padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.seccion .card {
+	background: #fff;
+	height: 90%;
+	padding: 40px;
+	border-radius: 5px;
+}
+
+.seccion h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.seccion p {
+	line-height: 38px;
+	margin-bottom: 40px;
+	color: #494949;
+	font-size: 20px;
+}
+
+.seccion img {
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    nav a{
+        font-size: 14px;
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    nav a{
+        font-size: 12px; 
+    }
+}
